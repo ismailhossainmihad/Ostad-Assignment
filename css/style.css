@@ -1,0 +1,103 @@
+
+body{
+    background-color: #222831;
+    flex-direction: column;
+    overflow: scroll;
+    
+}
+.logo{
+    color: #EEEEEE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+.navit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 2px solid #393E46;   
+}
+.function ul li{
+    padding-right: 50px;
+
+}
+.home{
+    font-size: 20px;
+    font-size: 25px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home a{
+    text-decoration: none;
+    cursor: text;
+    color: #EEEEEE;
+    
+}
+.content{
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.hire{
+    padding-top: 150px;
+}
+.creative{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 130px;
+    font-weight: bold;
+    color: #EEEEEE;
+    
+
+    
+    text-align: start;
+    padding-bottom: 50px;
+}
+.designer{
+    color: #00ADB5;
+}
+.submit{
+    padding-top: 60px;
+    padding-left: 220px;
+    padding-bottom: 150px;
+
+}
+.btncolor{
+    border: none;
+    color: #EEEEEE;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #00ADB5;
+    border-radius: 50px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    width: 190px;
+    height: 65px;
+}
+.btncolor2{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #393E46;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.image1 img{
+    height:630px;
+    width: 550px;
+}
