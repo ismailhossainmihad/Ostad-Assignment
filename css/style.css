@@ -7,6 +7,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.container1{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #393E46;
+
+}
 
 .logo {
     color: #EEEEEE;
@@ -175,9 +181,14 @@ body {
 }
 
 .aboutme {
+    display: flex;
     padding-top: 450px;
     border-bottom: 2px solid #393E46;
     padding-bottom: 500px;
+    height: 100%;
+    witdth: 100%;
+    background-color:#393E46;
+    ;
 
 }
 
@@ -232,45 +243,33 @@ h1 {
 
 }
 
-.section1 .ismail {
+/* Background image for the section */
+.container9 .ismail {
     background-image: url("https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg");
-    background-repeat: repeat;
-    background-size: auto;
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
     padding: 2rem;
-
-}
-
-.borde {
+  }
+  
+  /* Padding for the top border */
+  .borde {
     padding-top: 50px;
-}
-
-.projectbtn {
+  }
+  
+  /* Styles for the "allpro" section */
+  .allpro {
+    padding-left: 100px;
+  }
+  
+  /* Styles for the project buttons */
+  .projectbtn {
     padding-top: 30px;
-}
-
-.projects {
-    text-align: start;
-    padding-top: 75px;
-    padding-left: 100px;
-
-}
-
-.projects img {
-    height: 368px;
-    width: 280;
-}
-
-.allpro {
-    padding-left: 100px;
-}
-
-section.section1 {
-    padding-top: 150px;
-}
-
-.projectbtn .btncolor3 {
+  }
+  
+  .projectbtn .btncolor3 {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -282,21 +281,17 @@ section.section1 {
     cursor: pointer;
     border-radius: 50px;
     background-color: #00ADB5;
-    /* Base background color */
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition */
-}
-
-.projectbtn .btncolor3:hover {
+  }
+  
+  .projectbtn .btncolor3:hover {
     background-color: #009C9C;
-    /* Darker background color on hover */
     transform: scale(1.1);
-    /* Slightly enlarge the button */
-}
-
-.projectbtn .btncolor4 {
+  }
+  
+  .projectbtn .btncolor4 {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -308,31 +303,68 @@ section.section1 {
     cursor: pointer;
     border-radius: 50px;
     background-color: rgba(57, 62, 70, 0.8);
-    /* Semi-transparent background */
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.projectbtn .btncolor4:hover {
+  }
+  
+  .projectbtn .btncolor4:hover {
     background-color: rgba(57, 62, 70, 0.8);
-
     transform: scale(1.1);
-
-}
-.mindim {
-    height: 350px;
-    width: 200px;
-    align-items: center;
-    padding-left: 200px;
-}
-
-form{
-    height:1600px;
-    width: 900px;
-    left:200px;
-    align-items: center;
-}
+  }
+  
+  /* Styles for the projects section */
+  .projects {
+    text-align: start;
+    padding-top: 75px;
+    padding-left: 100px;
+  }
+  
+  .projects img {
+    height: 368px;
+    width: 280px; /* Fixed width for images */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    border: 2px solid #fff; /* Optional: Add a border around images */
+  }
+.container10 {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Adds space between the left and right sections */
+  }
+  
+  .left, .right {
+    flex: 1; /* Makes both sections take equal space */
+    min-width: 300px; /* Ensures sections don't get too small */
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .left img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+  }
     .form-label {
         color: white;
         font-weight: bold;
@@ -392,401 +424,11 @@ form{
     background-color: #353230; /* Dark Orange Background */
     border-color: #3f3c39;
     color: white;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .navit {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 10px 10px;
-        border-bottom: 2px solid #393E46;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* Keeps space between logo and nav items */
-        align-items: center;
-    }
-
-    
-    .navit ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .navit ul li {
-        padding: 0 30px;
-    }
-    
-    .navit ul li a {
-        text-decoration: none;
-        color: #EEEEEE;
-        font-size: 16px;
-    }
-    
-    .function {
-        padding-left: 30px;
-    
-    }
-    .function ul li a {
-        padding-left: 30px;
-    
-    }
-    .function ul li a {
-        padding-left: 30px;
-    
-    }
-    
-    .home {
-        font-size: 20px;
-        font-family: 'Verdana';
-    
-    }
-    
-    .home a {
-        text-decoration: none;
-        cursor: text;
-        color: #EEEEEE;
-        text-align: center;
-        padding-right: 30px;
-    }
-    
-    .content {
-        display: flex;
-        justify-content: flex-start;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    }    
-}
-
-@media screen and (min-width: 992px) and (max-width: 1468px) {
-    body {
-        background-color: #222831;
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .logo {
-        color: #EEEEEE;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        display: block;
-        font-size: 32px;
-        text-align: center;
-        justify-self: flex-start;
-        padding: 75px;
-        padding-bottom: 30px;
-        padding-top: 30px;
-    
-    }
-    
-    .navit {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 10px 10px;
-        border-bottom: 2px solid #393E46;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    
-    .navit ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .navit ul li {
-        padding: 0 30px;
-    }
-    
-    .navit ul li a {
-        text-decoration: none;
-        color: #EEEEEE;
-        font-size: 17px;
-    }
-    
-    .function {
-        padding-left: 30px;
-    
-    }
-    .function ul li a {
-        padding-left: 30px;
-    
-    }
-    
-    .home {
-        font-size: 20px;
-        font-family: 'Verdana';
-    
-    }
-    
-    .home a {
-        text-decoration: none;
-        cursor: text;
-        color: #EEEEEE;
-        text-align: center;
-        padding-right: 30px;
-    }
-    
-    .content {
-        display: flex;
-        justify-content: flex-start;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    }
-    /* New designer intro section */
-.hire {
-    padding-top: 75px;
-    padding-right: 30px;
-    text-align: center;
-}
-
-.creative {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    color: #EEEEEE;
-    text-align: start;
-    margin: 0;
-    line-height: 0.98;
-    
-}
-
-.designer {
-    color: #00ADB5;
-    margin: 0;
-}
+/* 
+dhjtgnxcccccccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccctresfdc   
+QWERFTGHJNMMJHGFDSXDCFVGHBJNMKMNB VCSDFGFBHN MBVCV VXCDVC 
+HJJHFGXXCVBXC
+XCVVXCXCVXCVBVV */
 
 
-.submit {
-    padding-top: 60px;
-    padding-left: 5%;
-    padding-bottom: 50px;
-    text-align: start;
-    font-size: 100%;
-}
-
-.submit1 {
-    padding-left: 5%;
-    padding-top: 30px;
-}
-
-.submit h1 {
-    font-size: 90px;
-}
-.submit h1 span{
-    font-size: 90px;
-}
-.btncolor {
-    border: none;
-    color: #EEEEEE;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color: #00ADB5;
-    border-radius: 50px;
-    font-weight: 700;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    width: 190px;
-    height: 65px;
-}
-
-.btncolor2 {
-    border: none;
-    color: white;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: #393E46;
-    font-weight: bold;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    height: 65px;
-    width: 280px;
-}
-
-
-.image1 img {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 30px;
-    padding-right: 50px;
-}
-    .down {
-        padding: 10px;
-    }
-    
-    .arr {
-        height: 125px;
-        width: 125px;
-    }
-    
-    .arrpo {
-        padding-right: 170px;
-        padding-top: 200px;
-    }
-    
-    .aboutme {
-        padding-top: 450px;
-        border-bottom: 2px solid #393E46;
-        padding-bottom: 500px;
-    
-    }
-    
-    .aboutme1 {
-        padding-left: 100px;
-    
-    }
-    
-    
-    h1 span {
-        color: #00ADB5;
-    }
-    
-    h1 {
-        color: #EEEEEE;
-        font-size: 85px;
-        font-weight: bold;
-    }
-    
-    .about p {
-        font-size: 25px;
-        color: #EEEEEE;
-    }
-    
-    .about {
-        padding-left: 40px;
-        padding-top: 25px;
-        padding-right: 200px;
-        text-align: start;
-    
-    }
-    
-    .about1 .relax .relax1 {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    
-    .relax {
-        position: absolute;
-        height: 715px;
-        width: 870px;
-        margin-right: 40px;
-        align-items: center;
-    }
-    
-    .relax1 {
-        position: relative;
-        top: 50px;
-        left: 100px;
-        height: 565px;
-        width: 670px;
-    
-    }
-    
-    .section1 .ismail {
-        background-image: url("https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg");
-        background-repeat: repeat;
-        background-size: auto;
-        width: 100%;
-        height: 100vh;
-        padding: 2rem;
-    
-    }
-    
-    .borde {
-        padding-top: 50px;
-    }
-    
-    .projectbtn {
-        padding-top: 30px;
-    }
-    
-    .projects {
-        text-align: start;
-        padding-top: 75px;
-        padding-left: 100px;
-    
-    }
-    
-    .projects img {
-        height: 368px;
-        width: 280;
-    }
-    
-    .allpro {
-        padding-left: 100px;
-    }
-    
-    section.section1 {
-        padding-top: 150px;
-    }
-    
-    .projectbtn .btncolor3 {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 50px;
-        background-color: #00ADB5;
-        /* Base background color */
-        font-weight: bold;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        /* Smooth transition */
-    }
-    
-    .projectbtn .btncolor3:hover {
-        background-color: #009C9C;
-        /* Darker background color on hover */
-        transform: scale(1.1);
-        /* Slightly enlarge the button */
-    }
-    
-    .projectbtn .btncolor4 {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 50px;
-        background-color: rgba(57, 62, 70, 0.8);
-        /* Semi-transparent background */
-        font-weight: bold;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    
-    .projectbtn .btncolor4:hover {
-        background-color: rgba(57, 62, 70, 0.8);
-    
-        transform: scale(1.1);
-    
-    }   
-    
-    
-
-
-    
-}
